@@ -1,0 +1,44 @@
+
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+<style>
+ 
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .picture{
+        transform: translate(150%,50%) scale(0);
+        animation: image 3s ease-in-out infinite;
+
+        overflow: hidden;
+    }
+    @keyframes image {
+        25%{
+            transform: translate(-100%,0) scale(1);
+        }
+        50%{
+            transform: scale(0.7);
+        }
+        100%{
+            border-radius: 50%;
+            transform: scale(1);
+        }
+    }
+
+</style>
+<body>
+<div class="picture">
+    <img src="/1.jpg" alt="anime img">
+</div>
+</body>
+</html>
