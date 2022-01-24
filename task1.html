@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+    .trani{
+        background-color: rgb(255, 255, 255);
+        height: 50px;
+        width: 150px;
+        display: flex;
+        font-size: .9rem;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10%;
+        border-style: solid;
+        border-color: rgb(0, 132, 255);
+        transition: background-color 0.6s ease-in,  width 0.6s ease-in  ;
+    }
+
+   .content {
+       color: rgb(0, 132, 255);
+       transition: color 0.6s ease-in;
+   }
+
+
+    .trani:hover{
+        background-color: rgb(0, 132, 255);
+        width: 200px;
+    }
+
+    .trani:hover .content{
+        color: rgb(255, 255, 255);
+    }
+
+    </style>
+</head>
+<body>
+        <div class="trani"><h4 class="content">Hover me!</h4></div>
+</body>
+</html>
